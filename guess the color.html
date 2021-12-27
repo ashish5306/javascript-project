@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guss the color</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            flex-direction: column;
+            margin: auto;
+        }
+
+        .heading {
+            background: #00fff1;
+        }
+        .square-container{
+            width: 1120px;
+            display: flex;
+            flex-direction: row;
+        }
+        .square{
+            width: 100px;
+            height: 100px;
+            background: red;
+            border-radius: 10px;
+            margin: 15px;
+        }
+        .Result{
+            font-size: 30px;
+            text-align: center;
+            color: red;
+            padding-top: 26px;
+            padding-bottom: 26px;
+        }
+        .rgba-color{
+            color: black;
+            font-size: 50px;
+            padding: 27px;
+        }
+        .heading-text{
+            padding-top:50px ;
+        }
+        .replay{
+            font-size: 20px;
+            padding: 10px 30px;
+            background: #00fff1;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+            box-shadow: 0 0 10px #decfcf;
+            text-align: center;
+            display: none;
+            margin: auto;
+        }
+        .replay-btn-warrper{
+            text-align: center;
+        }
+        .change-mode{
+            background: linear-gradient( 45deg, #00ffe3, #89ff07, #ff0087);
+            padding: 10px 30px;
+            font-size: 20px;
+            outline: none;
+            border: none;
+            border-radius: 5px;
+            margin-top: 26px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container heading">
+        <h1 class="heading-text">Guess the color</h1>
+        <p class="rgba-color"></p>
+    </div>
+    <div class="square-container container">
+        <div class="square" id="square1"></div>
+        <div class="square" id="square2"></div>
+        <div class="square" id="square3"></div>
+        <div class="square" id="square4"></div>
+        <div class="square" id="square5"></div>
+        <div class="square" id="square6"></div>
+        
+    </div>
+    <div class="replay-btn-warrper">
+        <h3 class="Result"> </h3>
+    <button class="replay">replay</button>
+    <button class="change-mode" onclick="ChangeMode()"> Change to RGB mode</button>
+    </div>
+
+
+   <script src="index2.js"></script>
+</body>
+
+</html>
